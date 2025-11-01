@@ -112,11 +112,6 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.13.tgz#da4bfd73f49bd541d28920ab0e2bf0ee80f71c91"
   integrity sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==
 
-"@types/trusted-types@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-1.0.6.tgz#569b8a08121d3203398290d602d84d73c8dcf5da"
-  integrity sha512-230RC8sFeHoT6sSUlRO6a8cAnclO06eeiq1QDfiv2FGCLWFvvERWgwIQD4FWqD9A69BN7Lzee4OXwoMVnnsWDw==
-
 "@typescript-eslint/eslint-plugin@^5.9.1":
   version "5.62.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.62.0.tgz#aeef0328d172b9e37d9bab6dbc13b87ed88977db"
@@ -717,6 +712,11 @@ doctrine@^3.0.0:
   integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
   dependencies:
     esutils "^2.0.2"
+
+dompurify@3.1.7:
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.1.7.tgz#711a8c96479fb6ced93453732c160c3c72418a6a"
+  integrity sha512-VaTstWtsneJY8xzy7DekmYWEOZcmzIe3Qb3zPd4STve1OBTa+e+WmS1ITQec1fZYXI3HCsOZZiSMpG6oxoWMWQ==
 
 dunder-proto@^1.0.0, dunder-proto@^1.0.1:
   version "1.0.1"
@@ -2335,6 +2335,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+marked@14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-14.0.0.tgz#79a1477358a59e0660276f8fec76de2c33f35d83"
+  integrity sha512-uIj4+faQ+MgHgwUW1l2PsPglZLOLOT1uErt06dAPtx2kjteLAkbsd/0FiYg/MGS+i7ZKLb7w2WClxHkzOOuryQ==
+
 math-intrinsics@^1.0.0, math-intrinsics@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/math-intrinsics/-/math-intrinsics-1.1.0.tgz#a0dd74be81e2aa5c2f27e65ce283605ee4e2b7f9"
@@ -2370,12 +2375,13 @@ minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
-monaco-editor@^0.53.0:
-  version "0.53.0"
-  resolved "https://registry.yarnpkg.com/monaco-editor/-/monaco-editor-0.53.0.tgz#2f485492e0ee822be13b1b45e3092922963737ae"
-  integrity sha512-0WNThgC6CMWNXXBxTbaYYcunj08iB5rnx4/G56UOPeL9UVIUGGHA1GR0EWIh9Ebabj7NpCRawQ5b0hfN1jQmYQ==
+monaco-editor@^0.54.0:
+  version "0.54.0"
+  resolved "https://registry.yarnpkg.com/monaco-editor/-/monaco-editor-0.54.0.tgz#c0d6ebb46b83f1bef6f67f6aa471e38ba7ef8231"
+  integrity sha512-hx45SEUoLatgWxHKCmlLJH81xBo0uXP4sRkESUpmDQevfi+e7K1VuiSprK6UpQ8u4zOcKNiH0pMvHvlMWA/4cw==
   dependencies:
-    "@types/trusted-types" "^1.0.6"
+    dompurify "3.1.7"
+    marked "14.0.0"
 
 ms@2.1.2:
   version "2.1.2"
